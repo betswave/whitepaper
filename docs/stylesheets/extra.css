@@ -1,0 +1,59 @@
+/* Betswave brand theming for Material for MkDocs */
+
+:root {
+  /* Brand core */
+  --bw-primary: #174975; /* deep navy */
+  --bw-primary-2: #248bb5; /* blue */
+  --bw-accent: #1bccf1; /* cyan */
+}
+
+/* Apply exact brand colors to Material variables */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--bw-primary);
+  --md-primary-fg-color--light: var(--bw-primary-2);
+  --md-primary-fg-color--dark: #0f2f4d;
+
+  --md-accent-fg-color: var(--bw-accent);
+
+  /* Links */
+  --md-typeset-a-color: var(--bw-accent);
+}
+
+/* Optional: keep light scheme aligned too (if user toggles) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--bw-primary);
+  --md-primary-fg-color--light: var(--bw-primary-2);
+  --md-primary-fg-color--dark: #0f2f4d;
+
+  --md-accent-fg-color: var(--bw-accent);
+  --md-typeset-a-color: var(--bw-primary-2);
+}
+
+/* Header background: slight gradient + separation line */
+.md-header {
+  background: linear-gradient(90deg, var(--bw-primary) 0%, #0f2f4d 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Logo badge (helps when logo + header have similar tones) */
+.md-header__button.md-logo {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 6px 8px;
+  margin-right: 6px; /* reduces space before title */
+}
+
+/* Bigger logo + subtle shadow for contrast */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.6rem; /* increase if you want more */
+  width: auto;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+}
+
+/* Reduce the gap between logo badge and title */
+.md-header__title {
+  font-weight: 600;
+  padding-left: 2px;
+}

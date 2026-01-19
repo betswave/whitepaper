@@ -1,5 +1,5 @@
-site_name: Betswave Whitepaper
-site_description: Betswave Whitepaper v1.1
+site_name: Betswave
+site_description: Whitepaper v1.1
 # site_url: https://whitepaper.betswave.io/
 repo_url: https://github.com/betswave/whitepaper
 edit_uri: edit/main/docs/
@@ -7,6 +7,25 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: en
+  logo: assets/logo.svg
+  favicon: assets/favicon.ico
+
+  # Dark mode by default (slate). Light mode available via toggle.
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
   features:
     - navigation.sections
     - navigation.top
@@ -29,3 +48,6 @@ nav:
   - Legal/Disclaimer: legal-disclaimer.md
   - Roadmap: roadmap.md
   - Appendix: appendix.md
+
+extra_css:
+  - stylesheets/extra.css
