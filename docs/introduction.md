@@ -1,3 +1,7 @@
+---
+icon: material/information-outline
+---
+
 # Introduction
 
 Betswave is building a decentralized sports betting and gaming platform on Hedera with a clear design goal: deliver a transparent, non-custodial betting experience where users remain in control of funds and outcomes are settled on-chain.

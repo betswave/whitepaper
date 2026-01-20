@@ -1,3 +1,7 @@
+---
+icon: material/anchor
+---
+
 # ORCA Utility (VIP Membership NFTs)
 
 ORCA NFTs are premium, non-transferable membership tokens designed for power users and long-term participants within the platform. ORCA memberships provide access to enhanced features, reduced fees, and exclusive experiences, while reinforcing sustained engagement and ecosystem alignment.

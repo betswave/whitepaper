@@ -1,4 +1,8 @@
-# Betswave Whitepaper v1.1
+---
+icon: material/home
+---
+
+# Whitepaper
 
 Betswave is a decentralized sports betting and gaming platform built on Hedera. It is designed to provide a fair, transparent, and non-custodial betting experience.
 

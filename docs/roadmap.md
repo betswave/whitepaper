@@ -1,3 +1,7 @@
+---
+icon: material/map-outline
+---
+
 # Roadmap
 
 This roadmap summarizes Betswave’s phased progression from foundation work to mainnet launch and ecosystem expansion. Each phase includes: what has been achieved, why it matters, and how WAVE’s utility layer is strengthened through platform readiness and participation.
@@ -50,7 +54,7 @@ This roadmap summarizes Betswave’s phased progression from foundation work to 
 
 ## 2026 Q1 | Core Platform & Token Launch
 
-### What we have achieved
+### In progress (current milestone)
 
 - WAVE token launch and initial distribution
 - Betswave mainnet launch
@@ -73,7 +77,7 @@ This roadmap summarizes Betswave’s phased progression from foundation work to 
 
 ## 2026 Q2 – Q3 | Ecosystem Expansion
 
-### What we have achieved
+### Planned deliverables
 
 - Betswave Casino launched
 - Esports tournaments and community events introduced
@@ -96,7 +100,7 @@ This roadmap summarizes Betswave’s phased progression from foundation work to 
 
 ## 2026 Q4 | Advanced Products
 
-### What we have achieved
+### Planned deliverables
 
 - Betswave City (Play-to-Earn experiences) introduced
 - Advanced trading and futures-style features launched
@@ -115,7 +119,7 @@ This roadmap summarizes Betswave’s phased progression from foundation work to 
 
 ## 2027+ | Long-Term Vision
 
-### What we have achieved
+### Planned deliverables
 
 - Exploration of metaverse-based experiences
 - Exploration of real-world and offline initiatives

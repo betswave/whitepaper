@@ -5,6 +5,12 @@
   --bw-primary: #174975; /* deep navy */
   --bw-primary-2: #248bb5; /* blue */
   --bw-accent: #1bccf1; /* cyan */
+  --bw-ink: #0f1b2a;
+  --bw-paper: #f6f8fb;
+  --bw-card: #ffffff;
+  --bw-slate: #0d1622;
+  --bw-slate-2: #132030;
+  --bw-slate-card: #152234;
 }
 
 /* Apply exact brand colors to Material variables */
@@ -17,6 +23,9 @@
 
   /* Links */
   --md-typeset-a-color: var(--bw-accent);
+  --md-default-bg-color: var(--bw-slate);
+  --md-default-fg-color: #e6eef7;
+  --md-default-fg-color--light: #b9c7d6;
 }
 
 /* Optional: keep light scheme aligned too (if user toggles) */
@@ -27,6 +36,9 @@
 
   --md-accent-fg-color: var(--bw-accent);
   --md-typeset-a-color: var(--bw-primary-2);
+  --md-default-bg-color: var(--bw-paper);
+  --md-default-fg-color: var(--bw-ink);
+  --md-default-fg-color--light: #25364c;
 }
 
 /* Header background: slight gradient + separation line */
@@ -35,13 +47,13 @@
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
 }
 
-/* Logo badge (helps when logo + header have similar tones) */
+/* Logo: clean, no badge */
 .md-header__button.md-logo {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 6px 8px;
-  margin-right: 6px; /* reduces space before title */
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-right: 2px; /* tighter gap before title */
 }
 
 /* Bigger logo + subtle shadow for contrast */
@@ -54,6 +66,176 @@
 
 /* Reduce the gap between logo badge and title */
 .md-header__title {
-  font-weight: 600;
-  padding-left: 2px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.md-header__topic,
+.md-header__ellipsis {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Stronger document title */
+.md-typeset h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+/* Sidebar polish */
+.md-sidebar {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5fa 100%);
+}
+
+/* Hide sidebar title label */
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
+/* Nav items */
+.md-nav__link {
+  font-weight: 500;
+}
+
+.md-nav__icon {
+  color: var(--bw-primary-2);
+  opacity: 0.9;
+}
+
+.md-nav__link--active .md-nav__icon {
+  color: var(--bw-primary);
+}
+
+.md-nav__link--active {
+  color: var(--bw-primary);
+  font-weight: 700;
+}
+
+/* Content card feel */
+.md-main {
+  background: var(--bw-paper);
+}
+
+.md-content__inner {
+  background: var(--bw-card);
+  border-radius: 18px;
+  padding: 2.6rem 2.8rem;
+  box-shadow: none;
+  border: 1px solid rgba(15, 27, 42, 0.06);
+}
+
+/* Remove menu shadows in light mode */
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap,
+[data-md-color-scheme="default"] .md-sidebar--secondary .md-sidebar__scrollwrap {
+  box-shadow: none;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--secondary {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5fa 100%);
+}
+
+/* Remove sidebar "tile" backgrounds */
+.md-sidebar__scrollwrap {
+  background: transparent;
+  border-radius: 0;
+}
+
+.md-nav--secondary .md-nav__title {
+  background: transparent;
+}
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  background: transparent;
+}
+
+.md-nav__title::before,
+.md-nav__link--active::before {
+  background: none;
+}
+
+.md-sidebar__scrollwrap::before,
+.md-sidebar__scrollwrap::after {
+  background: none;
+  box-shadow: none;
+}
+
+.md-nav__link--active {
+  border-left: 2px solid var(--bw-primary-2);
+  padding-left: calc(var(--md-nav-indent) - 2px);
+}
+
+/* Kill active/toc tiles (Material 9.5.x) */
+[data-md-color-scheme] .md-nav__item--active > .md-nav__link,
+[data-md-color-scheme] .md-nav__link--active,
+[data-md-color-scheme] .md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-md-color-scheme] .md-nav__item--active > .md-nav__link::before,
+[data-md-color-scheme] .md-nav__link--active::before,
+[data-md-color-scheme] .md-nav__title::before {
+  background: none !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+
+[data-md-color-scheme] .md-sidebar__scrollwrap::before,
+[data-md-color-scheme] .md-sidebar__scrollwrap::after {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Dark mode refinements */
+[data-md-color-scheme="slate"] .md-sidebar {
+  background: linear-gradient(180deg, #0f1a28 0%, #0b141f 100%);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary {
+  background: linear-gradient(180deg, #0f1a28 0%, #0b141f 100%);
+}
+
+[data-md-color-scheme="slate"] .md-main {
+  background: var(--bw-slate);
+}
+
+[data-md-color-scheme="slate"] .md-content__inner {
+  background: var(--bw-slate-card);
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #c6d5e3;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #e9f3ff;
+}
+
+[data-md-color-scheme="slate"] .md-nav__icon {
+  color: #7fb6d6;
+}
+
+/* Footer: match header tone */
+.md-footer,
+.md-footer-meta {
+  background: linear-gradient(90deg, var(--bw-primary) 0%, #0f2f4d 100%);
+}
+
+.md-footer-meta__inner {
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner {
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+  }
 }

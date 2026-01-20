@@ -1,3 +1,7 @@
+---
+icon: material/chart-line
+---
+
 # Market Opportunity
 
 Sports betting and gaming are high-frequency digital markets where users care most about three outcomes:

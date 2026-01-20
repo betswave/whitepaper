@@ -1,3 +1,7 @@
+---
+icon: material/scale-balance
+---
+
 # Legal / Disclaimer
 
 This whitepaper (the “Document”) is provided for informational purposes only and describes a proposed technology, token utility, and platform design. It is not intended to be, and must not be construed as, legal, tax, financial, or investment advice.

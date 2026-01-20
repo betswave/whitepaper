@@ -1,3 +1,7 @@
+---
+icon: material/file-document-outline
+---
+
 # Executive Summary
 
 Betswave is a decentralized sports betting and gaming platform built on Hedera. It is designed to give users a fair, transparent, and non-custodial betting experience. All betting on Betswave happens in **USDC**, while the platform’s native token, **WAVE**, is used for governance, rewards, and platform benefits.
