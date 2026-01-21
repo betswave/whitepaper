@@ -29,6 +29,7 @@ theme:
   features:
     - navigation.sections
     - navigation.top
+    - navigation.footer
     - content.action.edit
     - toc.follow
 
