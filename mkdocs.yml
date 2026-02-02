@@ -10,21 +10,21 @@ theme:
   logo: assets/logo.svg
   favicon: assets/favicon.ico
 
-  # Light mode by default. Dark mode available via toggle.
+  # Dark mode by default. Light mode available via toggle.
   palette:
-    - scheme: default
-      primary: blue
-      accent: cyan
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-
     - scheme: slate
       primary: blue
       accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
   features:
     - navigation.sections

@@ -2,7 +2,7 @@
 icon: material/waves
 ---
 
-# WAVE Token (Utility + Economics)
+# WAVE Tokenomics
 
 ## Overview and Supply
 
