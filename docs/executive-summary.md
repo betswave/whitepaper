@@ -57,7 +57,7 @@ Betswave’s core utilities and platform principles include:
 
 - **USDC-only betting** with on-chain settlement, enabling stable payouts and full user fund control.
 - **Peer-to-peer (P2P) betting**, where users bet directly against other users instead of the platform.
-- **Transparent fee model** with a flat **1.5%** platform fee (**Non-ORCA Members**) applied upfront, with no hidden charges and no deductions during withdrawals.
+- **Transparent fee model** with a flat **5%** platform fee (**Non-ORCA Members**) applied upfront, with no hidden charges and no deductions during withdrawals.
 - **On-chain fee enforcement**, where all fees are visible and verifiable through smart contracts.
 - **WAVE staking** for governance participation, platform benefits, and reward access.
 - **Usage-based rewards**, distributed based on real platform activity such as betting volume, participation, and referral programs.
@@ -72,7 +72,7 @@ Most betting platforms are centralized. They control user funds, charge unclear 
 
 Betswave enables **P2P betting**, where users bet directly against other users rather than the platform. The platform charges:
 
-- a flat **1.5% fee** for **Non-ORCA Members**, and
+- a flat **5% fee** for **Non-ORCA Members**, and
 - a flat **0.5% fee** for **ORCA Members**,
 
 with no hidden fees or charges. Fees are clear, verifiable, and enforced on-chain.
