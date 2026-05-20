@@ -7,21 +7,21 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: en
-  logo: assets/logo.svg
+  logo: assets/logo0.svg
   favicon: assets/favicon.ico
 
   # Dark mode by default. Light mode available via toggle.
   palette:
     - scheme: slate
-      primary: blue
-      accent: cyan
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
 
     - scheme: default
-      primary: blue
-      accent: cyan
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -51,7 +51,7 @@ nav:
   - Appendix: appendix.md
 
 extra_css:
-  - stylesheets/extra.css?v=2
+  - stylesheets/extra.css
 
 extra:
   generator: false
